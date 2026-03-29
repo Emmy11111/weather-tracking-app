@@ -61,8 +61,8 @@ The app fetches live weather data from OpenWeatherMap. You need a free API key t
 **Option A — Clone with Git** (recommended if you have Git installed):
 
 ```bash
-git clone https://github.com/your-username/weather-tracker.git
-cd weather-tracker
+git https://github.com/Emmy11111/weather-tracking-app
+cd weather-tracking-app
 ```
 
 **Option B — Download ZIP:**
