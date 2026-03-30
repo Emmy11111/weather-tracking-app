@@ -146,7 +146,7 @@ The app is publicly accessible at:
 
 | Resource | Link |
 |---|---|
-| 🎥 Demo Video | [Watch on Google Drive / YouTube](#) |
+| 🎥 Demo Video | [Watch on Loom](https://www.loom.com/share/0fe556dbb9d54a17a3f51c65187ae3bd) |
 | 💻 GitHub Repository | [github.com/smartfarm-assist](https://github.com/Emmy11111/weather-tracking-app) |
 | 📋 SRS Document | [Software Requirements Specification](https://docs.google.com/document/d/1RFvYPrNoOdi6aV9zfzwa8xRbJpjGgdL17TBnATqJrMk/edit?usp=sharing) |
 | 🌐 Live App | [Deployed URL](https://emmy11111.github.io/weather-tracking-app/) |
