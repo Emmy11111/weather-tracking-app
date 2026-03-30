@@ -1,118 +1,144 @@
-# 🌤️ Weather Tracker Web App
+# 🌱 SmartFarm Assist
 
-A clean, mobile-friendly web application that delivers **real-time weather conditions** and a **24-hour hourly forecast** for any city in the world — powered by the OpenWeatherMap API.
+A web-friendly web platform delivering **real-time weather forecasts**, **live crop market prices**, **expert farm management tips**, and **crop-specific seasonal guides** — built for smallholder farmers in Rwanda and across Africa.
 
 ---
 
 ## 📸 Preview
 
-> Search any city → See current temperature, conditions, humidity, wind speed, and an hourly forecast — all in one dashboard.
+> Open the app → instantly see today's weather, market prices, farm tips, and seasonal alerts — no login, no barriers, works offline.
+
+---
+
+## 📋 System Description
+
+### The Problem
+
+Smallholder farmers across Rwanda and Africa lack reliable access to:
+- Accurate weather forecasts to plan planting and harvesting
+- Fair, up-to-date crop market prices to make informed selling decisions
+- Trustworthy crop guidance leading to pest damage, poor yields, and lost income
+
+Without this information, productivity drops, crop losses increase, and the livelihoods of millions of farming families are threatened — directly undermining food security across the continent.
+
+### The Solution — SmartFarm Assist
+
+SmartFarm Assist is an all-in-one farm intelligence platform that gives farmers instant, barrier-free access to the data they need:
+
+| Feature | Description |
+|---|---|
+| 🌤️ Weather Forecast | Real-time conditions + 3-day forecast for any city |
+| 📈 Market Prices | Live indicative crop prices in RWF/kg |
+| 💡 Farm Tips | Expert seasonal and management guidance |
+| 🌾 Crop Guides | Step-by-step planting-to-harvest guides per crop |
+| 🔔 Seasonal Alerts | Timely notifications for planting and harvest windows |
+| ⚡ Offline Mode | Data cached locally — works without internet |
+
+**Zero registration. Zero personal data collected. Instant access.**
 
 ---
 
 ## ✨ Features
 
-- 🔍 Search weather by city name
-- 🌡️ Live current temperature (°C)
-- 🌥️ Weather condition description + icon
-- 💧 Humidity, wind speed, feels-like temperature, cloud cover
+- 🔍 Search weather by city name (powered by OpenWeatherMap)
+- 🌡️ Live temperature, humidity, wind speed, feels-like, cloud cover
 - 🕐 24-hour hourly forecast (8 time slots, 3-hour intervals)
+- 📊 Crop market prices table with trend indicators
+- 🌾 Crop-specific seasonal guides (maize, beans, tomatoes, and more)
 - 📱 Fully responsive — works on desktop, tablet, and mobile
-- ⚡ No frameworks required — plain HTML, CSS, and JavaScript
+- ⚡ Offline-capable via local data caching
+- 🔒 No login, no account, no personal data required
 
 ---
 
 ## 🗂️ Project Structure
 
 ```
-weather-tracker/
+smartfarm-assist/
 │
-├── index.html       # Main application file (HTML + CSS + JS in one file)
+├── index.html       # Main HTML structure and layout
+├── style.css        # All styling and responsive design
+├── script.js        # App logic, API calls, data rendering
 └── README.md        # Project documentation
 ```
 
-> All code lives in a single `index.html` file — no build tools or dependencies needed.
-
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started — Full Setup Guide
 
-Follow these steps exactly to get the project running on your machine.
+Follow every step below to get the project running on your machine.
 
 ---
 
 ### Step 1 — Get a Free OpenWeatherMap API Key
 
-The app fetches live weather data from OpenWeatherMap. You need a free API key to make it work.
+The weather features fetch live data from OpenWeatherMap. You need a free API key.
 
 1. Go to [https://openweathermap.org](https://openweathermap.org)
 2. Click **Sign Up** and create a free account
-3. Check your email and verify your account
-4. Log in, then go to **API Keys** in your account dashboard:
+3. Verify your email address
+4. Log in and navigate to **API Keys**:
    `https://home.openweathermap.org/api_keys`
-5. Copy the **Default** API key that was automatically generated (or create a new one)
+5. Copy the **Default** API key shown on that page
 
-> ⚠️ **Important:** New API keys can take **10–120 minutes** to activate after creation. If you get a `401 Invalid API key` error, wait a bit and try again.
+> ⚠️ **Important:** New API keys take **10–120 minutes** to activate. If you see a `401 Invalid API key` error, wait and try again.
 
 ---
 
 ### Step 2 — Download the Project
 
-**Option A — Clone with Git** (recommended if you have Git installed):
+**Option A — Clone with Git:**
 
 ```bash
-git https://github.com/Emmy11111/weather-tracking-app
-cd weather-tracking-app
+git clone https://github.com/YOUR_USERNAME/smartfarm-assist
+cd smartfarm-assist
 ```
 
 **Option B — Download ZIP:**
 
-1. Click the green **Code** button on this GitHub page
+1. Click the green **Code** button on the GitHub page
 2. Select **Download ZIP**
-3. Extract the ZIP file to a folder on your computer
+3. Extract the ZIP to a folder on your computer
 4. Open the extracted folder
 
 ---
 
 ### Step 3 — Add Your API Key
 
-1. Open `index.html` in any text editor (Notepad, VS Code, Sublime Text, etc.)
-2. Find this line near the bottom of the file (inside the `<script>` tag):
-
-```javascript
-const apiKey = 'b2321c3741051f4f43d33bb1ee633620';
-```
-
-3. Replace the value inside the quotes with **your own API key** from Step 1:
+1. Open `script.js` in any text editor (VS Code, Notepad, Sublime Text, etc.)
+2. Find the line that defines the API key:
 
 ```javascript
 const apiKey = 'YOUR_API_KEY_HERE';
+```
+
+3. Replace `YOUR_API_KEY_HERE` with the key you copied in Step 1:
+
+```javascript
+const apiKey = 'abc123youractualkey';
 ```
 
 4. Save the file
 
 ---
 
-### Step 4 — Open the App
+### Step 4 — Open the App in Your Browser
 
-Since this is a plain HTML file, you can open it directly in your browser — **no server needed**.
+This is a plain HTML/CSS/JS project — **no server, no build tools, no installs required.**
 
-**Option A — Open directly:**
-
+**Option A — Open directly (simplest):**
 - Double-click `index.html`
-- It will open in your default web browser
+- It opens in your default browser immediately
 
-**Option B — Open from your browser:**
-
-1. Open your browser (Chrome, Firefox, Edge, Safari)
+**Option B — Open from the browser:**
+1. Open Chrome, Firefox, Edge, or Safari
 2. Press `Ctrl + O` (Windows/Linux) or `Cmd + O` (Mac)
 3. Navigate to your project folder and select `index.html`
 4. Click **Open**
 
-**Option C — Use VS Code Live Server** (best for development):
-
+**Option C — VS Code Live Server (recommended for development):**
 1. Install [Visual Studio Code](https://code.visualstudio.com)
-2. Install the **Live Server** extension (search in the Extensions panel)
+2. Install the **Live Server** extension from the Extensions panel
 3. Right-click `index.html` in the VS Code file explorer
 4. Select **Open with Live Server**
 5. The app opens at `http://127.0.0.1:5500`
@@ -121,23 +147,45 @@ Since this is a plain HTML file, you can open it directly in your browser — **
 
 ### Step 5 — Use the App
 
-1. Click **Track Weather** in the top navigation bar
-2. Type any city name into the search box (e.g. `Kigali`, `London`, `New York`)
-3. Press **Go** or hit **Enter**
-4. View your results:
-   - Current temperature and conditions
-   - Humidity, wind speed, feels-like temp, cloud cover
-   - 24-hour hourly forecast
+Once open in the browser:
+
+1. **About** — Read about the platform and its purpose
+2. **Dashboard** — Search a city for weather, see market prices, farm tips, and seasonal alerts
+3. **Crops** — Browse crop cards and click any crop for its full seasonal guide
+4. **Weather** — Full-page weather tracker with hourly 24-hour forecast
 
 ---
 
-## ⚙️ Configuration
+## 🌐 Live Demo
 
-| Setting | Where to change | Default |
-|---|---|---|
-| API Key | `const apiKey = '...'` in `index.html` | Placeholder key |
-| Temperature Unit | Converted from Kelvin to °C in JS | Celsius (°C) |
-| Forecast slots | `hourlyData.slice(0, 8)` | 8 slots (24 hours) |
+The app is publicly accessible at:
+
+> **[https://YOUR-DEPLOYED-URL-HERE](https://YOUR-DEPLOYED-URL-HERE)**
+
+*(Replace with your actual deployment URL — e.g. from GitHub Pages, Netlify, or Vercel)*
+
+---
+
+## 📄 Project Links
+
+| Resource | Link |
+|---|---|
+| 🎥 Demo Video | [Watch on Google Drive / YouTube](#) |
+| 💻 GitHub Repository | [github.com/YOUR_USERNAME/smartfarm-assist](#) |
+| 📋 SRS Document | [Software Requirements Specification](#) |
+| 🌐 Live App | [Deployed URL](#) |
+
+> Replace all `#` placeholders with your actual links before submitting.
+
+---
+
+## ⚙️ Configuration Reference
+
+| Setting | File | Where to change | Default |
+|---|---|---|---|
+| API Key | `script.js` | `const apiKey = '...'` | Placeholder |
+| Temperature Unit | `script.js` | Conversion from Kelvin to °C | Celsius |
+| Forecast slots | `script.js` | `hourlyData.slice(0, 8)` | 8 slots (24 hrs) |
 
 ---
 
@@ -145,9 +193,9 @@ Since this is a plain HTML file, you can open it directly in your browser — **
 
 | Technology | Purpose |
 |---|---|
-| HTML5 | App structure |
-| CSS3 | Styling and responsive layout |
-| Vanilla JavaScript | Logic and API calls |
+| HTML5 | App structure and layout |
+| CSS3 | Styling, responsive design |
+| Vanilla JavaScript | Logic, API calls, DOM manipulation |
 | [OpenWeatherMap API](https://openweathermap.org/api) | Live weather data |
 | [Google Fonts](https://fonts.google.com) | DM Serif Display + DM Sans typography |
 
@@ -163,40 +211,38 @@ Since this is a plain HTML file, you can open it directly in your browser — **
 ## 🐛 Troubleshooting
 
 **❌ "City not found" error**
-- Check the spelling of the city name
-- Try adding the country code: `Paris,FR` or `London,GB`
+- Check your spelling
+- Try adding a country code: `Kigali,RW` or `London,GB`
 
-**❌ Blank weather results or no data showing**
-- Open your browser's Developer Tools (`F12`) → Console tab
-- Look for error messages
-- Most likely cause: your API key hasn't activated yet (wait up to 2 hours after creating it)
+**❌ Weather data doesn't load**
+- Open DevTools (`F12`) → Console tab and check for errors
+- Most likely: your API key hasn't activated yet — wait up to 2 hours
 
 **❌ `401 Invalid API key`**
-- Your API key is incorrect or not yet active
-- Double-check you copied the full key from [openweathermap.org/api_keys](https://home.openweathermap.org/api_keys)
-- Wait 10–120 minutes if the key was just created
+- Your key is wrong or not yet active
+- Double-check it at [openweathermap.org/api_keys](https://home.openweathermap.org/api_keys)
 
-**❌ `CORS` errors in the console**
-- Do not try to open `index.html` via a `file://` path in some browsers
-- Use VS Code Live Server (Option C in Step 4) or any local HTTP server
+**❌ CORS errors in the console**
+- Don't open via `file://` path in some browsers
+- Use VS Code Live Server or any local HTTP server instead
 
 ---
 
 ## 📋 Requirements
 
 - A modern web browser (Chrome, Firefox, Edge, Safari)
-- An internet connection (to fetch weather data)
+- An internet connection (for live weather data)
 - A free OpenWeatherMap API key
 
-No Node.js, no npm, no frameworks, no installs required.
+No Node.js, no npm, no frameworks, no build tools required.
 
 ---
 
 ## 🙏 Acknowledgements
 
-- Weather data provided by [OpenWeatherMap](https://openweathermap.org)
-- Weather icons provided by OpenWeatherMap's icon CDN
-- Fonts by [Google Fonts](https://fonts.google.com)
+- Weather data by [OpenWeatherMap](https://openweathermap.org)
+- Weather icons from OpenWeatherMap's icon CDN
+- Typography by [Google Fonts](https://fonts.google.com)
 
 ---
 
