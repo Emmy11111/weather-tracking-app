@@ -54,7 +54,7 @@ SmartFarm Assist is an all-in-one farm intelligence platform that gives farmers 
 ## 🗂️ Project Structure
 
 ```
-smartfarm-assist/
+weather-tracking-app/
 │
 ├── index.html       # Main HTML structure and layout
 ├── style.css        # All styling and responsive design
@@ -90,8 +90,8 @@ The weather features fetch live data from OpenWeatherMap. You need a free API ke
 **Option A — Clone with Git:**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/smartfarm-assist
-cd smartfarm-assist
+git clone https://github.com/Emmy11111/weather-tracking-app
+cd weather-tracking-app
 ```
 
 **Option B — Download ZIP:**
@@ -101,28 +101,7 @@ cd smartfarm-assist
 3. Extract the ZIP to a folder on your computer
 4. Open the extracted folder
 
----
-
-### Step 3 — Add Your API Key
-
-1. Open `script.js` in any text editor (VS Code, Notepad, Sublime Text, etc.)
-2. Find the line that defines the API key:
-
-```javascript
-const apiKey = 'YOUR_API_KEY_HERE';
-```
-
-3. Replace `YOUR_API_KEY_HERE` with the key you copied in Step 1:
-
-```javascript
-const apiKey = 'abc123youractualkey';
-```
-
-4. Save the file
-
----
-
-### Step 4 — Open the App in Your Browser
+### Step 3 — Open the App in Your Browser
 
 This is a plain HTML/CSS/JS project — **no server, no build tools, no installs required.**
 
@@ -145,7 +124,7 @@ This is a plain HTML/CSS/JS project — **no server, no build tools, no installs
 
 ---
 
-### Step 5 — Use the App
+### Step 4 — Use the App
 
 Once open in the browser:
 
@@ -160,10 +139,7 @@ Once open in the browser:
 
 The app is publicly accessible at:
 
-> **[https://YOUR-DEPLOYED-URL-HERE](https://YOUR-DEPLOYED-URL-HERE)**
-
-*(Replace with your actual deployment URL — e.g. from GitHub Pages, Netlify, or Vercel)*
-
+> **[https://emmy11111.github.io/weather-tracking-app/](https://emmy11111.github.io/weather-tracking-app/)**
 ---
 
 ## 📄 Project Links
@@ -171,12 +147,9 @@ The app is publicly accessible at:
 | Resource | Link |
 |---|---|
 | 🎥 Demo Video | [Watch on Google Drive / YouTube](#) |
-| 💻 GitHub Repository | [github.com/YOUR_USERNAME/smartfarm-assist](#) |
-| 📋 SRS Document | [Software Requirements Specification](#) |
-| 🌐 Live App | [Deployed URL](#) |
-
-> Replace all `#` placeholders with your actual links before submitting.
-
+| 💻 GitHub Repository | [github.com/smartfarm-assist](https://github.com/Emmy11111/weather-tracking-app) |
+| 📋 SRS Document | [Software Requirements Specification](https://docs.google.com/document/d/1RFvYPrNoOdi6aV9zfzwa8xRbJpjGgdL17TBnATqJrMk/edit?usp=sharing) |
+| 🌐 Live App | [Deployed URL](https://emmy11111.github.io/weather-tracking-app/) |
 ---
 
 ## ⚙️ Configuration Reference
@@ -205,26 +178,6 @@ The app is publicly accessible at:
 |---|---|
 | `/data/2.5/weather` | Current weather conditions |
 | `/data/2.5/forecast` | 5-day / 3-hour interval forecast |
-
----
-
-## 🐛 Troubleshooting
-
-**❌ "City not found" error**
-- Check your spelling
-- Try adding a country code: `Kigali,RW` or `London,GB`
-
-**❌ Weather data doesn't load**
-- Open DevTools (`F12`) → Console tab and check for errors
-- Most likely: your API key hasn't activated yet — wait up to 2 hours
-
-**❌ `401 Invalid API key`**
-- Your key is wrong or not yet active
-- Double-check it at [openweathermap.org/api_keys](https://home.openweathermap.org/api_keys)
-
-**❌ CORS errors in the console**
-- Don't open via `file://` path in some browsers
-- Use VS Code Live Server or any local HTTP server instead
 
 ---
 
